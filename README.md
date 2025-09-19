@@ -1,3 +1,7 @@
+
+<img width="1589" height="1010" alt="0eccd315-71f9-4170-929f-ac0ac8b237ec" src="https://github.com/user-attachments/assets/1dc5fd7b-fc82-489b-87c4-2cc0b7d30bf0" />
+
+
 ♻️ Smart Material Classification Dustbin
 
 This project is a smart waste management system that automatically classifies metal, wet, and dry waste using sensors and an Arduino-based microcontroller.
