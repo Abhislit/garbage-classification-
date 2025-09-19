@@ -1,0 +1,48 @@
+A system detects whether the waste is metal, plastic, wet, or dry, then moves the dustbin lid or separates it into compartments. Let me break it down for you:
+
+🔹 Interfacing Components
+
+Sensors
+
+IR Sensor / Ultrasonic Sensor → Detect object presence.
+
+Metal Sensor (Inductive/Capacitive Proximity) → Detect metallic waste.
+
+Moisture Sensor → Identify wet waste.
+
+Color Sensor (TCS3200) → Differentiate plastic/paper.
+
+Microcontroller
+
+Arduino / PIC / 8051 / STM32 (depending on your project).
+
+Takes sensor input, processes classification, and controls actuators.
+
+Actuators
+
+Servo Motors → Direct flap to respective bin section.
+
+DC Motor → Rotate conveyor or bin cover.
+
+Power Supply
+
+5V/12V regulated supply depending on components.
+
+🔹 Embedded C Code (Example for Arduino UNO)
+
+Here’s a basic embedded C-style code (Arduino syntax, but same structure for PIC/8051)
+🔹 Working Flow
+
+Object comes near → IR sensor triggers.
+
+Microcontroller reads metal + moisture sensor.
+
+Classification logic:
+
+If metal sensor ON → Metal bin
+
+Else if moisture high → Wet bin
+
+Else → Dry/Plastic bin
+
+Servo motor rotates flap → drops waste in correct bin.
